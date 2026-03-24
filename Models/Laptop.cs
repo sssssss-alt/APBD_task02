@@ -4,16 +4,17 @@
 
 public class Laptop : Equipment
 {
-        public int RamGB { get; set; }
+    public override string Description { get; set; }
+    public int RamGB { get; set; }
 
-        public int ScreenSize { get; set; }
+    public int ScreenSize { get; set; }
 
-        public Laptop(string name, int ram, int screen)
+    public Laptop(string name, int ram, int screen)
             : base(name)
-        {
-            RamGB = ram;
-            ScreenSize = screen;
-        }
+    {
+        RamGB = ram;
+        ScreenSize = screen;
+    }
 
 
 }

@@ -9,7 +9,7 @@ public abstract class Equipment
     
     public string Name { get; set; }
     
-    public string Description { get; set; }
+    public abstract string Description { get; set; }
 
     public EquipmentStatus Status { get; set; } = EquipmentStatus.Available;
     
